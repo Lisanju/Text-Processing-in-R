@@ -1,3 +1,5 @@
+# Base de dados: https://www.gutenberg.org/browse/languages/pt
+
 # Diretório
 setwd("")
 
