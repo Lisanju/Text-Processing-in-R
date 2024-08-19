@@ -12,3 +12,4 @@ https://www.gutenberg.org/cache/epub/69229/pg69229.txt
 
 https://www.gutenberg.org/cache/epub/67594/pg67594.txt
 
+https://www.gutenberg.org/cache/epub/69187/pg69187.txt
