@@ -1,15 +1,11 @@
-setwd("home/ufscar/ProjetoElisa")
+# Diretório
+setwd("")
 
-ubirajara <- scan(file="TextosInput/JAUbirajara.txt", what="character", sep="\n", strip.white = TRUE)
+# Processamento
+arquivo <- scan(file="URL", what="character", sep="\n", strip.white = TRUE)
+texto <- paste(arquivo, collapse = " ")
+sentencas <- stringr::str_split_1(texto, pattern = "[\u2014.;!?]+")
 
-head(ubirajara, 10)
-
-vetorUbirajara <- paste(ubirajara, collapse = " ")
-length(vetorUbirajara)
-
-ubirajaraSentencas <- stringr::str_split_1(vetorUbirajara, pattern = "[\u2014.;!?]+")
-
-palavrasChave <- c("sozinho", "sozinha", "sozinhos", "sozinhas")
-sentencasFiltradas <- ubirajaraSentencas[sapply(ubirajaraSentencas, function(s) any(grepl(paste(palavrasChave, collapse="|"), s)))]
-
-matrizSentencasFiltradas <- matrix(sentencasFiltradas, ncol=1)
+# Filtragem
+palavras <- c("sozinho", "sozinha", "sozinhos", "sozinhas")
+sentencasFiltradas <- sentencas[grepl(paste(palavras, collapse = "|"), sentencas, ignore.case = TRUE)]
