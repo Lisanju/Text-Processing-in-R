@@ -9,13 +9,15 @@ library(tokenizers)
 # 3 - https://www.gutenberg.org/cache/epub/69229/pg69229.txt
 # 4 - https://www.gutenberg.org/cache/epub/67594/pg67594.txt
 # 5 - https://www.gutenberg.org/cache/epub/69187/pg69187.txt
+# 6 - https://www.gutenberg.org/cache/epub/63438/pg63438.txt
 
 # Textos da amostra B (Pós-1990)
-# 1 - 
-# 2 - 
-# 3 - 
-# 4 - 
-# 5 - 
+# 1 - https://www.gutenberg.org/cache/epub/33056/pg33056.txt
+# 2 - https://www.gutenberg.org/cache/epub/55797/pg55797.txt
+# 3 - https://www.gutenberg.org/cache/epub/57001/pg57001.txt
+# 4 - https://www.gutenberg.org/cache/epub/61653/pg61653.txt
+# 5 - https://www.gutenberg.org/cache/epub/55682/pg55682.txt
+# 6 - https://www.gutenberg.org/cache/epub/57895/pg57895.txt
 
 # Diretório
 setwd("/home/lisanju/Desktop/ProjetoElisa")
