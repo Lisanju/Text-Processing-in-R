@@ -4,20 +4,29 @@ library(tokenizers)
 # Base de dados: https://www.gutenberg.org/browse/languages/pt
 
 # Textos da amostra A (Pré-1990)
-# 1 - https://www.gutenberg.org/cache/epub/63438/pg63438.txt
-# 2 - https://www.gutenberg.org/cache/epub/69239/pg69239.txt
-# 3 - https://www.gutenberg.org/cache/epub/69229/pg69229.txt
-# 4 - https://www.gutenberg.org/cache/epub/67594/pg67594.txt
-# 5 - https://www.gutenberg.org/cache/epub/69187/pg69187.txt
-# 6 - https://www.gutenberg.org/cache/epub/63438/pg63438.txt
+# https://www.gutenberg.org/cache/epub/63438/pg63438.txt
+# https://www.gutenberg.org/cache/epub/69239/pg69239.txt
+# https://www.gutenberg.org/cache/epub/69229/pg69229.txt
+# https://www.gutenberg.org/cache/epub/67594/pg67594.txt
+# https://www.gutenberg.org/cache/epub/69187/pg69187.txt
+# https://www.gutenberg.org/cache/epub/63438/pg63438.txt
 
 # Textos da amostra B (Pós-1990)
-# 1 - https://www.gutenberg.org/cache/epub/33056/pg33056.txt
-# 2 - https://www.gutenberg.org/cache/epub/55797/pg55797.txt
-# 3 - https://www.gutenberg.org/cache/epub/57001/pg57001.txt
-# 4 - https://www.gutenberg.org/cache/epub/61653/pg61653.txt
-# 5 - https://www.gutenberg.org/cache/epub/55682/pg55682.txt
-# 6 - https://www.gutenberg.org/cache/epub/57895/pg57895.txt
+# https://www.gutenberg.org/cache/epub/33056/pg33056.txt
+# https://www.gutenberg.org/cache/epub/55797/pg55797.txt
+# https://www.gutenberg.org/cache/epub/57001/pg57001.txt
+# https://www.gutenberg.org/cache/epub/61653/pg61653.txt
+# https://www.gutenberg.org/cache/epub/55682/pg55682.txt
+# https://www.gutenberg.org/cache/epub/57895/pg57895.txt
+
+# Interpretações
+# 1 - espaço-temporal
+# 2 - mereológica
+# 3 - modificador argumental
+# 4 - sentimental
+# 5 - comportamental
+# 6 - autônoma
+# 7 - (anti-)causal
 
 # Diretório
 setwd("/home/lisanju/Desktop/ProjetoElisa")
@@ -52,4 +61,4 @@ ocorSen <-which(str_detect(sen, "s[oóò]zinh[aos]") == T)
 
 # Transposição das sentenças para um dataframe
 dataSen <- data.frame(tipo = NULL, sentenças = NULL)
-dataSen <- rbind(dataSen, data.frame(amostra = "A", sentenças = sen[ocorSen]))
+dataSen <- rbind(dataSen, data.frame(amostra = "B", sentenças = sen[ocorSen]))
