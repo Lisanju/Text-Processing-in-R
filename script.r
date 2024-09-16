@@ -19,6 +19,7 @@ library(tokenizers)
 # https://www.gutenberg.org/cache/epub/55682/pg55682.txt
 # https://www.gutenberg.org/cache/epub/57895/pg57895.txt
 # https://www.gutenberg.org/cache/epub/2837/pg2837.txt
+# https://www.gutenberg.org/cache/epub/26371/pg26371.txt
 
 # Interpretações
 # 1 - espaço-temporal
