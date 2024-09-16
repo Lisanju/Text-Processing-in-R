@@ -25,9 +25,9 @@ library(tokenizers)
 # 1 - espaço-temporal
 # 2 - mereológica
 # 3 - modificador argumental
-# 4 - sentimental
+# 4 - emocional
 # 5 - comportamental
-# 6 - autônoma
+# 6 - (anti)-assistida
 # 7 - (anti-)causal
 
 # Diretório
