@@ -31,9 +31,9 @@ sen <- tokenize_sentences(x = textoTratado)
 sen <- unlist(sen)
 
 ocorSen <-which(str_detect(sen, "s[oóò]zinh[aos]") == T)
- 
+  
 # Transposição das sentenças para um dataframe
-dataSen <- data.frame(tipo = NULL, sentenças = NULL)
+dataSen <- data.frame(amostra = NULL, sentenças = NULL)
 dataSen <- rbind(dataSen, data.frame(amostra = "B", sentenças = sen[ocorSen]))
 
 # Leitura da planilha rotulada
