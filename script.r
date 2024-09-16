@@ -1,6 +1,3 @@
-library(stringr)
-library(tokenizers)
-
 # Base de dados: https://www.gutenberg.org/browse/languages/pt
 
 # Interpretações
@@ -11,6 +8,9 @@ library(tokenizers)
 # 5 - comportamental
 # 6 - (anti)-assistida
 # 7 - (anti-)causal
+
+library(stringr)
+library(tokenizers)
 
 # Diretório
 setwd("/home/lisanju/Desktop/ProjetoElisa")
